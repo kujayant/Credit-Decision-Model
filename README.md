@@ -32,63 +32,18 @@ The confusion matrices of train and test set are below:
 
 ##Train Set##
 
+
 Confusion Matrix and Statistics
 
-           |Reference|
-           ---------------
-|Prediction |    0   |  1
----------------------------
-         |0   |947   |464
-       -------------------------  
-         |1    |56 |22414
-         ---------------
-                                        
-               Accuracy : 0.9782        
-                 95% CI : (0.9763, 0.98)
-    No Information Rate : 0.958         
-    P-Value [Acc > NIR] : < 2.2e-16     
-                                        
-                  Kappa : 0.7735        
- Mcnemar's Test P-Value : < 2.2e-16     
-                                        
-            Sensitivity : 0.94417       
-            Specificity : 0.97972       
-         Pos Pred Value : 0.67116       
-         Neg Pred Value : 0.99751       
-             Prevalence : 0.04200       
-         Detection Rate : 0.03965       
-   Detection Prevalence : 0.05908       
-      Balanced Accuracy : 0.96194       
-                                        
-       'Positive' Class : 0             
-                                        
+![alt text](https://github.com/kujayant/Credit-Decision-Model/blob/master/Train_Conf_mat.PNG)
+
+    
 ##Test Set##
 
 Confusion Matrix and Statistics
 
-          Reference
-Prediction    0    1
-         0  399  215
-         1   63 9554
-                                          
-               Accuracy : 0.9728          
-                 95% CI : (0.9695, 0.9759)
-    No Information Rate : 0.9548          
-    P-Value [Acc > NIR] : < 2.2e-16       
-                                          
-                  Kappa : 0.7276          
- Mcnemar's Test P-Value : < 2.2e-16       
-                                          
-            Sensitivity : 0.86364         
-            Specificity : 0.97799         
-         Pos Pred Value : 0.64984         
-         Neg Pred Value : 0.99345         
-             Prevalence : 0.04516         
-         Detection Rate : 0.03900         
-   Detection Prevalence : 0.06001         
-      Balanced Accuracy : 0.92081         
-                                          
-       'Positive' Class : 0         
+![alt text](https://github.com/kujayant/Credit-Decision-Model/blob/master/Test_conf_mat.PNG)
+
        
 The model seems to be generalizing well. 
 
