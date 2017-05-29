@@ -28,34 +28,6 @@ I have used confusion matrix, gini and AUC to check the veracity of results. You
 
 ##Results##
 
-The confusion matrices of train and test set are below:
-
-##Train Set##
-
-
-Confusion Matrix and Statistics
-
-![alt text](https://github.com/kujayant/Credit-Decision-Model/blob/master/Train_Conf_mat.PNG)
-
-    
-##Test Set##
-
-Confusion Matrix and Statistics
-
-![alt text](https://github.com/kujayant/Credit-Decision-Model/blob/master/Test_conf_mat.PNG)
-
-       
-The model seems to be generalizing well. 
-
-AUC
-
-##Train Set##
-
-Area under the curve: 0.9975
-
-##Test Set##
-
-Area under the curve: 0.9928
 
 GINI
 
@@ -65,9 +37,26 @@ GINI
 
 0.9950813
 
+
 ##Test Set##
 
 0.9856242
+
+####### Modeling after removing dpd_worst6 #######
+
+Best Gini on Test set 0.334041.
+
+There are two recommended models in the file "recommended_models.R" 
+
+Other models attempted are in smoted_data.R and h2o_models.R
+
+Observations from data : The data is very sensitive to overfitting. The train set is not very representative of the future data.
+Oversampling minority classes(by sampling, repeating cases and case weights) and adding noise by synthetic data creation (smote) has also led to overfitting models. 
+
+All types of ensembles(stacked,average,weighted average) resulted in massive overfitting of data. h2o_models.R has a couple of stacked ensembles if you want to look. 
+
+Maybe the next wave of improvement will come from further feature engineering where we could find some variable that can explain test set better.
+
 
 
 
